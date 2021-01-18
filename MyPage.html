@@ -7,6 +7,7 @@
         body {
             background-image: linear-gradient(rgba(240, 194, 194, 0.445), rgba(204, 239, 248, 0.527));
         }
+
         nav ul {
             text-align: center;
         }
@@ -16,7 +17,7 @@
             align-content: center;
             margin-right: 10%;
             padding: 2px;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 20px;
             font-weight: 400;
         }
@@ -37,17 +38,30 @@
             text-align: center;
             align-items: center;
         }
-        .container #IntroImg {
+
+        .container img {
             border: grey 5px solid;
             border-radius: 10px;
-            margin-left: 3%;
+            margin: 5px;
         }
+
         .container #AboutMe {
             flex-wrap: 2;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 20px;
             font-weight: 500;
-            margin: 1%;
+            margin: 20px;
+        }
+
+        .container #Interests {
+            flex-wrap: 2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .container #Interests ul {
+            text-align: left;
         }
     </Style>
 </head>
@@ -59,7 +73,7 @@
     <nav>
         <ul>
             <li class="ActivePage">MyPage</li>
-            <li>Skills</li>
+            <li>Interests</li>
             <li>Experiences</li>
             <li>Contact</li>
         </ul>
@@ -67,42 +81,41 @@
 
     <div class="container">
         <div id="IntroImg">
-            <img src="imgsrc/RamArvinth_Intro.jpg" alt="Ram Arvinth Image" width="180" height="250"
-                style="padding-right: 5%;">
+            <img src="imgsrc/RamArvinth_Intro.jpg" alt="Ram Arvinth Image" width="180" height="250">
         </div>
         <div id="AboutMe">
             <h3>About Me</h3>
             <p>
                 I am an Aerospace Master graduate currently working as a software
                 developer in Germany. I am from India originally, but moved to Germany
-                for studies at the start of 2017.<br><br>Life has been amazing so far with 
+                for studies at the start of 2017.<br><br>Life has been amazing so far with
                 some roller coaster rides, but nevertheless amazing.<br><br>Staying positive as always. :)
             </p>
         </div>
     </div>
 
-    <div style="text-align: center;">
-        <img src="imgsrc/RamArvinth_Intro.jpg" alt="Ram Arvinth Image" width="180" height="250"
-            style="padding-right: 5%;">
-        <img src="imgsrc/RubihornTop.jpg" alt="Ram Arvinth Image" width="320" height="250" style="padding-right: 5%;">
-        <img src="imgsrc/LisbonSurf.jpg" alt="Ram Arvinth Image" width="200" height="250" style="padding-right: 5%;">
-        <img src="imgsrc/SnowTop.jpg" alt="Ram Arvinth Image" width="200" height="250" style="padding-right: 5%;">
-        <img src="imgsrc/KeralaSurf.jpg" alt="Ram Arvinth Image" width="180" height="250" style="padding-right: 5%;">
+    <div class="container">
+
+        <div id="Interests">
+            <h3>Interests and Hobbies</h3>
+            <ul>
+                <li>The Aerospace industry have always intriguied me a lot. Hence my career path. dah!</li>
+                <li>Programming interests me. But never got down to web development. Thrilled about Strive
+                    Ignite.
+                </li>
+                <li>The F1 sport - a HUGE fan! <span style="color:mediumblue; font-weight: 900;">Redbull!</span>
+                    <span style="color: darkorange; font-weight: 900;">McLeran!</span>
+                </li>
+                <li>I generally like to be fit. So my wokout routine is more than just a hobby to me.</li>
+                <li>I trek a lot. This is the best part of living so close the Alps.</li>
+                <li>Also, 2020 was a year of board games for me. Played a lot many games (mostly Catan) and still
+                    looking for more.</li>
+            </ul>
+        </div>
+        <img src="imgsrc/SnowTop.jpg" alt="Ram Arvinth Image" width="200" height="250">   
+        <img src="imgsrc/LisbonSurf.jpg" alt="Ram Arvinth Image" width="200" height="250">   
+        <img src="imgsrc/KeralaSurf.jpg" alt="Ram Arvinth Image" width="180" height="250">
     </div>
-
-    <h3>Interests and Hobbies</h3>
-
-    <ul>
-        <li>The Aerospace industry have always intriguied me a lot. Hence my career path. dah!</li>
-        <li>Programming interests me. But so far never got down to web development. Thrilled about Strive Ignite.</li>
-        <li>The F1 sport - a HUGE fan! <span style="color:mediumblue; font-weight: 900;">Redbull!</span>
-            <span style="color: darkorange; font-weight: 900;">McLeran!</span>
-        </li>
-        <li>I genrally like to be fit. So my wokout routine is more than just a hobby to me.</li>
-        <li>I trek a lot. This is the best part of living so close the Alps.</li>
-        <li>Also, 2020 was a year of board games for me. Played a lot many games (mostly Catan) and still looking for
-            more.</li>
-    </ul>
 
     <h3>Contact Details</h3>
     <ol>
