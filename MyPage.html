@@ -28,13 +28,16 @@
         }
 
         .container {
-            display: flex;
+            display: inline-flex;
             flex-direction: row;
             border: 2px solid black;
             border-radius: 10px;
             box-sizing: content-box;
-            padding: 10px;
+            padding: 5px;
             margin: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
             text-align: center;
             align-items: center;
         }
@@ -45,43 +48,54 @@
             margin: 5px;
         }
 
-        .container #AboutMe {
-            flex-wrap: 2;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 20px;
-        }
-
         .container #Interests {
-            flex-wrap: 2;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
+            width: 48%;
         }
 
         .container #Interests ul {
             text-align: left;
+        }
+
+        .container .InterestsImgs {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 2%;
+        }
+
+        .contact div {
+            display: inline-flex;
+            margin-right: 25px;
+            margin-left: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .feedback {
+            text-align: center;
         }
     </Style>
 </head>
 
 <body>
 
-    <img src="imgsrc/Header_B747.jpg" alt="B747" width="100%" height="200">
+    <header>
+        <img src="imgsrc/Header_B747.jpg" alt="B747" width="100%" height="200">
 
-    <nav>
-        <ul>
-            <li class="ActivePage">MyPage</li>
-            <li>Interests</li>
-            <li>Experiences</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li class="ActivePage">MyPage</li>
+                <li>Interests</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <div id="IntroImg">
-            <img src="imgsrc/RamArvinth_Intro.jpg" alt="Ram Arvinth Image" width="180" height="250">
+            <img src="imgsrc/RamArvinth_Intro.jpg" alt="Ram Arvinth Image" width="200" height="250">
         </div>
         <div id="AboutMe">
             <h3>About Me</h3>
@@ -112,30 +126,43 @@
                     looking for more.</li>
             </ul>
         </div>
-        <img src="imgsrc/SnowTop.jpg" alt="Ram Arvinth Image" width="200" height="250">   
-        <img src="imgsrc/LisbonSurf.jpg" alt="Ram Arvinth Image" width="200" height="250">   
-        <img src="imgsrc/KeralaSurf.jpg" alt="Ram Arvinth Image" width="180" height="250">
+        <div class="InterestsImgs">
+            <div>
+                <img src="imgsrc/SnowTop.jpg" alt="Ram Arvinth Image" width="200" height="250">
+            </div>
+            <div>
+                <img src="imgsrc/LisbonSurf.jpg" alt="Ram Arvinth Image" width="200" height="250">
+            </div>
+            <div>
+                <img src="imgsrc/KeralaSurf.jpg" alt="Ram Arvinth Image" width="200" height="250">
+            </div>
+        </div>
+
     </div>
 
-    <h3>Contact Details</h3>
-    <ol>
-        <li>Email : ramarvinth@gmail.com</li>
-        <li>Socials : <a href="https://www.linkedin.com/in/ram-arvinth/" target="_blank">LinkedIn Page</a>
-            <span>.-.</span>
+    <div class="container contact">
 
+        <div>
+            <h3>Contact Details: </h3>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/ram-arvinth/" target="_blank">LinkedIn Page</a>
+        </div>
+        <div>
             <a href="https://www.facebook.com/s.p.ramarvinth/" target="_blank"> Facebook Page</a>
-        </li>
+        </div>
 
-    </ol>
+    </div>
 
+    <div class="feedback">
+        <p>_</p>
 
-    <p>_</p>
-
-    <h4>Your one word feedback on my page .. </h4>
-    <form action="/Strive_w1_d2/addons/feedback_response.html">
-        <input type="text">
-        <input type="submit" value="submit">
-    </form>
+        <h4>Your one word feedback on my page .. </h4>
+        <form action="/Strive_w1_d2/addons/feedback_response.html">
+            <input type="text">
+            <input type="submit" value="submit">
+        </form>
+    </div>
 </body>
 
 </html>
